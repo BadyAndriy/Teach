@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="підпис під текстом сайту в пошуку гугл">
+	<meta name="keywords" content="сторінка, веб-сайт, і т.д.">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=1.0">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="schortcut icon" href="../assets/img/space.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<title>Today - Info day</title>
+</head>
+<body>
+
+	<header class="header shadow">
+		<div class="header__menu">
+			<a href="../index.html" class="shadow">Головна</a>
+			<a href="categories.html" class="shadow">Категорії</a>
+		</div>
+		<form class="dark__mode-form shadow">
+			<button
+				class="dark__mode-button"
+				type="text"
+				class="input"
+				autocomplete="off"
+				onclick="dark()"
+			>
+				<img src="../assets/img/moon.svg" alt="dark">
+			</button>
+			<button
+				class="dark__mode-button"
+				type="text"
+				class="input"
+				autocomplete="off"
+				onclick="white()"
+			>
+				<img src="../assets/img/sun.svg" alt="light">
+			</button>
+		</form>
+		<div class="header__menu-burger">
+			<span></span>
+		</div>
+	</header>
+
+	<div id="up2"></div>
+	<div class="up">
+		<a href="#up2" id="up" class="shadow"><img src="../assets/img/up-arrow.svg" alt="up"></a>
+	</div>
+
+	<div class="content__article shadow">
+		<script>
+			window.onload = function() {
+				let i = 0
+				let category = []
+				const strGET = window.location.search.replace( '?id=', '')
+				for (const number of strGET) {
+					category.push(number)
+				}
+				if (category[0] === '1') {
+					if (htmlVideo[category[1]] === undefined) {
+						return 0
+					}else {
+						const a = category[1]
+						let b = category[1]
+						let c = Number(b)
+						c = c + 1
+						let base = document.querySelector('.content__article')
+						let link = document.createElement('div')
+						link.innerHTML = '<div class="article__title"><h2>'+htmlVideo[a]+'</h2></div><div class="article__video"><iframe class="article__video-palayer" src="'+htmlVideo[c]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+						link.className = 'article__wrapper'
+						base.append(link)
+					}
+				}else if (category[0] === '2') {
+					if (cssVideo[category[1]] === undefined) {
+						return 0
+					}else {
+						const a = category[1]
+						let b = category[1]
+						let c = Number(b)
+						c = c + 1
+						let base = document.querySelector('.content__article')
+						let link = document.createElement('div')
+						link.innerHTML = '<div class="article__title"><h2>'+cssVideo[a]+'</h2></div><div class="article__video"><iframe class="article__video-palayer" src="'+cssVideo[c]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+						link.className = 'article__wrapper'
+						base.append(link)
+					}
+				}else if (category[0] === '3') {
+					if (jsVideo[category[1]] === undefined) {
+						return 0
+					}else {
+						const a = category[1]
+						let b = category[1]
+						let c = Number(b)
+						c = c + 1
+						let base = document.querySelector('.content__article')
+						let link = document.createElement('div')
+						link.innerHTML = '<div class="article__title"><h2>'+jsVideo[a]+'</h2></div><div class="article__video"><iframe class="article__video-palayer" src="'+jsVideo[c]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+						link.className = 'article__wrapper'
+						base.append(link)
+					}
+				}else if (category[0] === '4') {
+					if (phpVideo[category[1]] === undefined) {
+						return 0
+					}else {
+						const a = category[1]
+						let b = category[1]
+						let c = Number(b)
+						c = c + 1
+						let base = document.querySelector('.content__article')
+						let link = document.createElement('div')
+						link.innerHTML = '<div class="article__title"><h2>'+phpVideo[a]+'</h2></div><div class="article__video"><iframe class="article__video-palayer" src="'+phpVideo[c]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+						link.className = 'article__wrapper'
+						base.append(link)
+					}
+				}else if (category[0] === '5') {
+					if (practicVideo[category[1]] === undefined) {
+						return 0
+					}else {
+						const a = category[1]
+						let b = category[1]
+						let c = Number(b)
+						c = c + 1
+						let base = document.querySelector('.content__article')
+						let link = document.createElement('div')
+						link.innerHTML = '<div class="article__title"><h2>'+practicVideo[a]+'</h2></div><div class="article__video"><iframe class="article__video-palayer" src="'+practicVideo[c]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+						link.className = 'article__wrapper'
+						base.append(link)
+					}
+				}else if (category[0] === '6') {
+					if (otherVideo[category[1]] === undefined) {
+						return 0
+					}else {
+						const a = category[1]
+						let b = category[1]
+						let c = Number(b)
+						c = c + 1
+						let base = document.querySelector('.content__article')
+						let link = document.createElement('div')
+						link.innerHTML = '<div class="article__title"><h2>'+otherVideo[a]+'</h2></div><div class="article__video"><iframe class="article__video-palayer" src="'+otherVideo[c]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+						link.className = 'article__wrapper'
+						base.append(link)
+					}
+				}else {
+					console.log('Error id is not defined!')
+				}
+			}
+		</script>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="підпис під текстом сайту в пошуку гугл">
+	<meta name="keywords" content="сторінка, веб-сайт, і т.д.">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=1.0">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="schortcut icon" href="../assets/img/space.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<title>Today - Info day</title>
+</head>
+<body>
+
+	<header class="header shadow">
+		<div class="header__menu">
+			<a href="../index.html" class="shadow">Головна</a>
+			<a href="categories.html" class="shadow">Категорії</a>
+		</div>
+		<form class="dark__mode-form shadow">
+			<button
+				class="dark__mode-button"
+				type="text"
+				class="input"
+				autocomplete="off"
+				onclick="dark()"
+			>
+				<img src="../assets/img/moon.svg" alt="dark">
+			</button>
+			<button
+				class="dark__mode-button"
+				type="text"
+				class="input"
+				autocomplete="off"
+				onclick="white()"
+			>
+				<img src="../assets/img/sun.svg" alt="light">
+			</button>
+		</form>
+		<div class="header__menu-burger">
+			<span></span>
+		</div>
+	</header>
+
+	<div id="up2"></div>
+	<div class="up">
+		<a href="#up2" id="up" class="shadow"><img src="../assets/img/up-arrow.svg" alt="up"></a>
+	</div>
+
+	<script>
+		window.onload = function() {
+			let i = 0
+			let id = 0
+			let strGET = window.location.search.replace( '?', '');
+			if (strGET === 'id=1') {
+				while (i <= htmlCategory.length) {
+					if (htmlCategory[i] === undefined) {
+						return 0
+					}else {
+						const a = i
+						const b = i + 1
+						const c = i + 2
+						let base = document.querySelector('.category__items')
+						let link = document.createElement('a')
+						link.innerHTML = '<div class="category__img"><img src="'+htmlCategory[a]+'" alt=""></div><div class="category__title"><h2>'+htmlCategory[b]+'</h2><h3>'+htmlCategory[c]+'</h3></div>'
+						link.href = 'article.html?id=1'+id
+						link.className = 'category__item shadow'
+						base.append(link)
+					}
+					i = i + 3
+					id = id + 2
+				}
+			}else if (strGET === 'id=2') {
+				while (i <= cssCategory.length) {
+					if (cssCategory[i] === undefined) {
+						return 0
+					}else {
+						const a = i
+						const b = i + 1
+						const c = i + 2
+						let base = document.querySelector('.category__items')
+						let link = document.createElement('a')
+						link.innerHTML = '<div class="category__img"><img src="'+cssCategory[a]+'" alt=""></div><div class="category__title"><h2>'+cssCategory[b]+'</h2><h3>'+cssCategory[c]+'</h3></div>'
+						link.href = 'article.html?id=2'+id
+						link.className = 'category__item shadow'
+						base.append(link)
+					}
+					i = i + 3
+					id = id + 2
+				}
+			}else if (strGET === 'id=3') {
+				while (i <= jsCategory.length) {
+					if (jsCategory[i] === undefined) {
+						return 0
+					}else {
+						const a = i
+						const b = i + 1
+						const c = i + 2
+						let base = document.querySelector('.category__items')
+						let link = document.createElement('a')
+						link.innerHTML = '<div class="category__img"><img src="'+jsCategory[a]+'" alt=""></div><div class="category__title"><h2>'+jsCategory[b]+'</h2><h3>'+jsCategory[c]+'</h3></div>'
+						link.href = 'article.html?id=3'+id
+						link.className = 'category__item shadow'
+						base.append(link)
+					}
+					i = i + 3
+					id = id + 2
+				}
+			}else if (strGET === 'id=4') {
+				while (i <= phpCategory.length) {
+					if (phpCategory[i] === undefined) {
+						return 0
+					}else {
+						const a = i
+						const b = i + 1
+						const c = i + 2
+						let base = document.querySelector('.category__items')
+						let link = document.createElement('a')
+						link.innerHTML = '<div class="category__img"><img src="'+phpCategory[a]+'" alt=""></div><div class="category__title"><h2>'+phpCategory[b]+'</h2><h3>'+phpCategory[c]+'</h3></div>'
+						link.href = 'article.html?id=4'+id
+						link.className = 'category__item shadow'
+						base.append(link)
+					}
+					i = i + 3
+					id = id + 2
+				}
+			}else if (strGET === 'id=5') {
+				while (i <= practicCategory.length) {
+					if (practicCategory[i] === undefined) {
+						return 0
+					}else {
+						const a = i
+						const b = i + 1
+						const c = i + 2
+						let base = document.querySelector('.category__items')
+						let link = document.createElement('a')
+						link.innerHTML = '<div class="category__img"><img src="'+practicCategory[a]+'" alt=""></div><div class="category__title"><h2>'+practicCategory[b]+'</h2><h3>'+practicCategory[c]+'</h3></div>'
+						link.href = 'article.html?id=5'+id
+						link.className = 'category__item shadow'
+						base.append(link)
+					}
+					i = i + 3
+					id = id + 2
+				}
+			}else if (strGET === 'id=6') {
+				while (i <= otherCategory.length) {
+					if (otherCategory[i] === undefined) {
+						return 0
+					}else {
+						const a = i
+						const b = i + 1
+						const c = i + 2
+						let base = document.querySelector('.category__items')
+						let link = document.createElement('a')
+						link.innerHTML = '<div class="category__img"><img src="'+otherCategory[a]+'" alt=""></div><div class="category__title"><h2>'+otherCategory[b]+'</h2><h3>'+otherCategory[c]+'</h3></div>'
+						link.href = 'article.html?id=6'+id
+						link.className = 'category__item shadow'
+						base.append(link)
+					}
+					i = i + 3
+					id = id + 2
+				}
+			}else {
+				console.log('Error id is not defined')
+			}
+		}
+	</script>
+
+	<div class="content__category shadow">
+		<div class="category__items">
+		
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../assets/js/index.js"></script>
+</body>
+</html>
