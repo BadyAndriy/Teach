@@ -1,0 +1,20 @@
+/* content__article ================================================================================== */
+.content__article {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 20px;
+	.article__title {
+		margin: 0 0 10px 0;
+		h2 {
+			font-size: 2.8rem;
+			font-weight: 600;
+		}
+	}
+	.article__video {
+		margin: 0 0 10px 0;
+		.article__video-palayer {
+			width: 100%;
+			height: calc(200px + (940 - 200) * ((100vw - 320px) / (2560 - 320)));
+		}
+	}
+}

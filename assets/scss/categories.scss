@@ -1,0 +1,23 @@
+/* content__categories ================================================================================== */
+.content__categories {
+	width: 100%;
+	.categories__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.categories__item {
+			flex: 0 1 calc((100% / 3) - 1rem);
+			margin-bottom: 2rem;
+			padding: 1rem;
+			border-radius: 20px;
+			.categories__img {
+				img {
+					width: 100%;
+				}
+			}
+			.categories__title {
+				margin-top: 10px;
+			}
+		}
+	}
+}

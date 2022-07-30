@@ -1,0 +1,28 @@
+/* content__category ================================================================================== */
+.content__category {
+	width: 100%;
+	.category__items {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		.category__item {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin-bottom: 2rem;
+			padding: 1rem;
+			border-radius: 20px;
+			.category__img {
+				margin-right: 10px;
+				img {
+					width: 150px;
+				}
+			}
+			.category__title {
+				h2 {
+					margin: 0 0 10px 0;
+				}
+			}
+		}
+	}
+}

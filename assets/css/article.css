@@ -1,0 +1,38 @@
+/* content__article ================================================================================== */
+.content__article {
+  padding: 10px;
+  border-radius: 5px;
+}
+.content__article .article__title {
+  margin: 0 0 10px 0;
+}
+.content__article .article__title h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.content__article .article__text {
+  margin: 0 0 10px 0;
+}
+.content__article .article__text h3 {
+  font-size: 20px;
+}
+.content__article .article__text h3 span {
+  font-weight: bold;
+}
+.content__article .article__text h3 a {
+  color: red;
+}
+.content__article .article__img {
+  margin: 0 0 10px 0;
+}
+.content__article .article__img img {
+  width: 100%;
+  padding: 5px;
+}
+.content__article .article__video {
+  margin: 0 0 10px 0;
+}
+.content__article .article__video .article__video-palayer {
+  width: 100%;
+  height: calc(200px + 740 * (100vw - 320px) / 2240);
+}

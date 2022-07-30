@@ -1,0 +1,30 @@
+/* content__categories ================================================================================== */
+.content__categories {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  border-radius: 5px;
+}
+.content__categories .categories__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content__categories .categories__items .categories__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31.333%;
+          flex: 0 1 31.333%;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.content__categories .categories__items .categories__item .categories__img img {
+  width: 100%;
+}
+.content__categories .categories__items .categories__item .categories__title {
+  margin: 10px 0 0 0;
+}
